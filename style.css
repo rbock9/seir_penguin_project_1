@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+} 
+
+/* **************
+** HEADING 
+************** */
+
+h1 {
+    text-align: center;
+    color: royalblue;
+}
+
+/* **************
+** QUESTION 
+************** */
+
+#question {
+    width: 70%;
+    padding: 2em;
+    border: 3px solid blue;
+    background-color: royalblue;
+    color: white;
+    font-size: 1.2em;
+    margin: 1em auto;
+}
+
+/* **************
+** ANSWERS 
+************** */
+
+#answer {
+    width: 50%;
+    margin: 1em auto;
+    color: white;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2em;
+}
+
+#answer ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#answer ul li {
+    width: 40%;
+    height: 2.5em;
+    background-color: black;
+    padding: .5em;
+    text-align: center;
+    margin: .5em;
+    font-weight: bolder;
+}
+
+
+/* **************
+** SCOREBOARD 
+************** */
+
+#scores {
+    display: flex;
+    width: 70%;
+    background-color: darkslategray;
+    justify-content: center;
+    margin: 1em auto;
+}
+
+#player1, #player2 {
+    width: 40%;
+    background-color: darkgoldenrod;
+    margin: .5em;
+    text-align: center;
+}
