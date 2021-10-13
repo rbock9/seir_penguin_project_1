@@ -1,14 +1,35 @@
 * {
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 } 
+
+body {
+    background-color: rgb(231, 193, 97);
+}
 
 /* **************
 ** HEADING 
 ************** */
 
+header {
+    border: 3px solid white;
+    background-color: yellow;
+    width: 40%;
+    margin: auto;
+}
+
 h1 {
     text-align: center;
     color: royalblue;
+    text-shadow: 2px 2px white;
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.1em;
+    text-align: center;
+    color: royalblue;
+    text-shadow: 2px 2px white;
 }
 
 /* **************
@@ -16,13 +37,16 @@ h1 {
 ************** */
 
 #question {
-    width: 70%;
-    padding: 2em;
-    border: 3px solid blue;
-    background-color: royalblue;
+    width: 50%;
+    padding: 1em;
+    border: 3px solid brown;
+    background-color: #f7a489;
     color: white;
+    text-shadow: 2px 2px royalblue;
     font-size: 1.2em;
+    font-weight: bolder;
     margin: 1em auto;
+    text-align: center;
 }
 
 /* **************
@@ -30,12 +54,13 @@ h1 {
 ************** */
 
 #answer {
-    width: 50%;
+    width: 66%;
     margin: 1em auto;
     color: white;
-    background-color: red;
+    background-color: purple;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
     padding: 1.2em;
 }
@@ -46,12 +71,15 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
+    align-items: center;
 }
 
 #answer ul li {
-    width: 40%;
-    height: 2.5em;
-    background-color: black;
+    display: flex;
+    /* width: 40%; */
+    /* height: 3em; */
+    color: black;
+    background-color: yellow;
     padding: .5em;
     text-align: center;
     margin: .5em;
@@ -65,15 +93,21 @@ h1 {
 
 #scores {
     display: flex;
-    width: 70%;
-    background-color: darkslategray;
+    width: 55%;
+    /* border: 1px darkslategray; */
     justify-content: center;
     margin: 1em auto;
 }
 
 #player1, #player2 {
+    /* font-size: 1em; */
     width: 40%;
-    background-color: darkgoldenrod;
-    margin: .5em;
+    color: white;
+    background-color: darkgreen;
+    margin: .25em;
     text-align: center;
+}
+
+h4 {
+    font-size: 1.5em;
 }
