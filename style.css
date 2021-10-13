@@ -58,6 +58,7 @@ h2 {
     margin: 1em auto;
     color: white;
     background-color: purple;
+    border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -69,9 +70,10 @@ h2 {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     list-style: none;
     align-items: center;
+    padding-inline-start: 0px;
 }
 
 #answer ul li {
@@ -82,8 +84,9 @@ h2 {
     background-color: yellow;
     padding: .5em;
     text-align: center;
-    margin: .5em;
+    margin: .6em;
     font-weight: bolder;
+    word-wrap: normal;
 }
 
 
@@ -101,11 +104,15 @@ h2 {
 
 #player1, #player2 {
     /* font-size: 1em; */
-    width: 40%;
+    width: 35%;
     color: white;
     background-color: darkgreen;
-    margin: .25em;
+    margin: .35em;
     text-align: center;
+}
+
+h3 {
+    word-wrap: normal;
 }
 
 h4 {
