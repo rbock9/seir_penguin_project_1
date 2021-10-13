@@ -11,6 +11,8 @@ const state = {
 
 let questions = []
 
+
+
 ///////////////////////
 // MAIN DOM ELEMENTS //
 ///////////////////////
@@ -60,7 +62,7 @@ const setBoard = (q) => {
     $p1score.text(state.player1)
     $p2score.text(state.player2)
 
-    $("li").off()
+    $("li").off
     $("li").on("click", (event) => {
         chooseAnswer(event, randomQuestion)
     })
@@ -85,11 +87,27 @@ $.ajax(URL)
 })
 
 
+///////////////////////
+// SOUNDS AND MUSIC  //
+///////////////////////
+
+var bgMusic = new Audio('./sounds/wario_music.mp3')
+// bgMusic.play();
+// bgMusic.volume = 0.5;
+// bgMusic.loop = true;
+
+var missSound = new Audio('./sounds/wario_missed.wav')
+// missSound.play();
+
+var hitSound = new Audio('./sounds/wario_laugh.wav')
+// hitSound.play();
+
+var gonnaWinSound = new Audio('./sounds/wario_gonna_win.wav')
+// gonnaWinSound.play();
 
 
 
-
-
+/////////////
 
 
 // Sample URL: https://cdn.contentful.com/spaces/{space_id}/environments/{environment_id}/entries?access_token={access_token}&content_type={content_type}
