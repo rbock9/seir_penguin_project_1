@@ -104,8 +104,8 @@ const URL = "https://cdn.contentful.com/spaces/wzvjort7ry1s/environments/master/
 $.ajax(URL)
 .then((data) => {
     questions = data.items.map((q) => q.fields)
-    console.log(data)
-    console.log(questions)
+    // console.log(data)
+    // console.log(questions)
 
     setBoard(questions)
 })
